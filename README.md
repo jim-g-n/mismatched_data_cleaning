@@ -1,3 +1,3 @@
-# Code and Supplementary Material for 'Data Cleaning in Practice: The Effects of Mismatched Train and Test Cleaning Pipelines on Regression Models'.
+# Code and Supplementary Material for 'The Effects of Mismatched Train and Test Data Cleaning Pipelines on Regression Models: Lessons for Practice'
 
-This repository contains both the code used for performing the experiments in 'Data Cleaning in Practice: The Effects of Mismatched Train and Test Cleaning Pipelines on Regression Models' and supplementary material. The supplementary material includes the appendices and CSV files containing the main results.
+This repository contains both the code used for performing the experiments in 'The Effects of Mismatched Train and Test Data Cleaning Pipelines on Regression Models: Lessons for Practice' and supplementary material. The supplementary material includes the appendices and CSV files containing the main results.
