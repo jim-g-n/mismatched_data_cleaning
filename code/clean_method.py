@@ -29,7 +29,7 @@ class MVCleaner(object):
             num_df = df.select_dtypes(include='number')
             cat_df = df.select_dtypes(exclude='number')
             if num_method == "mean":
-                num_imp = num_df.mean()
+                num_imp = num_df.mean(numeric_only=True)
             if num_method == "median":
                 num_imp = num_df.median()
             if num_method == "mode":
