@@ -28,19 +28,36 @@ class MVCleaner(object):
             cat_method = self.kwargs['cat']
             num_df = df.select_dtypes(include='number')
             cat_df = df.select_dtypes(exclude='number')
-            if num_method == "mean":
-                num_imp = num_df.mean(numeric_only=True)
-            if num_method == "median":
-                num_imp = num_df.median()
-            if num_method == "mode":
-                num_imp = num_df.mode().iloc[0]
+            
+            num_var_present = False
+            cat_var_present = False
+            
+            if not num_df.empty:
+                num_var_present = True
+            if not cat_df.empty:
+                cat_var_present = True
+            
+            if num_var_present:
+                if num_method == "mean":
+                    num_imp = num_df.mean(numeric_only=True)
+                if num_method == "median":
+                    num_imp = num_df.median()
+                if num_method == "mode":
+                    num_imp = num_df.mode().iloc[0]
 
-            if cat_method == "mode":
-                cat_imp = cat_df.mode().iloc[0]
-            if cat_method == "dummy":
-                cat_imp = ['missing'] * len(cat_df.columns)
-                cat_imp = pd.Series(cat_imp, index=cat_df.columns)
-            self.impute = pd.concat([num_imp, cat_imp], axis=0)
+            if cat_var_present:
+                if cat_method == "mode":
+                    cat_imp = cat_df.mode().iloc[0]
+                if cat_method == "dummy":
+                    cat_imp = ['missing'] * len(cat_df.columns)
+                    cat_imp = pd.Series(cat_imp, index=cat_df.columns)
+            
+            if num_var_present and cat_var_present:
+                self.impute = pd.concat([num_imp, cat_imp], axis=0)
+            elif num_var_present:
+                self.impute = num_imp
+            else:
+                self.impute = cat_imp
         self.is_fit = True
 
     def repair(self, df):
