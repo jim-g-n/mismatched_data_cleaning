@@ -14,9 +14,16 @@ Running the experiment code makes use of the following packages and version numb
 - xgboost=2.0.0
 - joblib=1.3.2
 
+The experiments for a given dataset (AirBnB or USCensus) can be reproduced as follows:
+1. Create the cleaned training and test data splits using the **dataset**_data_cleaning Jupyter notebook.
+2. Train the different models on the cleaned training data using the **dataset**_model_fitting Jupyter notebook.
+3. Test the trained models on the different cleaned test data using the **dataset**_model_inference Jupyter notebook.
+
 ## Analysis
 
-Running the analysis makes further use of the following packages and version numbers, in addition to the pandas and numpy libraries above:
+Running the analysis makes use of the following packages and version numbers, in addition to the pandas and numpy libraries above:
 
 - seaborn=0.12.2
 - matplotlib=3.6.2
+
+The analysis can be performed using the results_analysis Jupyter notebook in the supplementary material folder.
