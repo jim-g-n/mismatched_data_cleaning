@@ -1,6 +1,8 @@
-# Code and Supplementary Material for 'The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice'
+# The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice
 
 This repository contains both the code used for performing the experiments in 'The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice' and supplementary material. The supplementary material includes the appendix and CSV files containing the main results.
+
+## Code
 
 Running the experiment code makes use of the following packages and version numbers:
 
@@ -12,7 +14,9 @@ Running the experiment code makes use of the following packages and version numb
 - xgboost=2.0.0
 - joblib=1.3.2
 
-Running the analysis makes further use of the following packages and version numbers:
+## Analysis
+
+Running the analysis makes further use of the following packages and version numbers, in addition to the pandas and numpy libraries above:
 
 - seaborn=0.12.2
 - matplotlib=3.6.2
