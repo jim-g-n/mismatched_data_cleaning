@@ -4,10 +4,10 @@ This repository contains both the code used for performing the experiments in 'T
 
 Running the experiment code makes use of the following packages and version numbers:
 
-numpy=1.23.5
-
-pandas=1.5.2
-
+\begin{itemize}
+\item numpy=1.23.5
+\item pandas=1.5.2
+\end{itemize}
 scikit-learn=1.3.2
 
 scipy=1.9.3
