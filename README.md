@@ -4,8 +4,8 @@ This repository contains both the code used for performing the experiments in 'T
 
 Running the experiment code makes use of the following packages and version numbers:
 
--numpy=1.23.5
--pandas=1.5.2
+- numpy=1.23.5
+- pandas=1.5.2
 -scikit-learn=1.3.2
 -scipy=1.9.3
 -multiprocess=0.70.12.2
