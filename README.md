@@ -1,6 +1,6 @@
 # The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice
 
-This repository contains both the code used for performing the experiments in 'The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice' and supplementary material. The supplementary material includes the appendix and CSV files containing the main results.
+This repository contains both the code used for performing the experiments in 'The effects of mismatched train and test data cleaning pipelines on regression models: lessons for practice' and supplementary material for recreating the analysis. The supplementary material includes the appendix and CSV files containing the main results, as well as  the Jupyter notebooks for analysing these results.
 
 ## Code
 
@@ -26,4 +26,4 @@ Running the analysis makes use of the following packages and version numbers, in
 - seaborn=0.12.2
 - matplotlib=3.6.2
 
-The analysis can be performed using the 'results_analysis' Jupyter notebook in the 'supplementary material' folder.
+The analysis on model performance and variable distributions can be performed using the 'model_results_analysis' and 'cleaning_effects_airbnb' Jupyter notebooks in the 'supplementary material' folder.
