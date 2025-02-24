@@ -26,4 +26,4 @@ Running the analysis makes use of the following packages and version numbers, in
 - seaborn=0.12.2
 - matplotlib=3.6.2
 
-The analysis on model performance and variable distributions can be performed using the 'model_results_analysis' and 'cleaning_effects_airbnb' Jupyter notebooks in the 'supplementary material' folder.
+The analysis on model performance and variable distributions can be performed using the 'model_results_analysis' and 'cleaning_effects_airbnb' Jupyter notebooks in the 'Analysis' folder.
